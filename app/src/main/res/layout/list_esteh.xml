@@ -35,6 +35,28 @@
             android:gravity="center"
             tools:ignore="HardcodedText,RtlSymmetry" />
 
+        <TextView
+            android:id="@+id/tv_esteh2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Harga"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingStart="20dp"
+            android:gravity="center"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_esteh3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Deskripsi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingStart="20dp"
+            android:gravity="center"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

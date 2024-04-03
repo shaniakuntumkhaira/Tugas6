@@ -1,6 +1,9 @@
 package com.example.esteh;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,5 +32,18 @@ public class DetailActivity extends AppCompatActivity {
         deskripsiTextView.setText(deskripsi);
         hargaTextView.setText("Harga: Rp " + harga);
         gambarImageView.setImageResource(gambarResId);
+
+        Button shareButton = findViewById(R.id.btnShare);
+        shareButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Lakukan share data di sini
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_TEXT, "Pesanan : " + nama + "\n" +
+                        "Harga : " + harga);
+                startActivity(Intent.createChooser(intent, "Bagikan"));
+            }
+        });
     }
 }

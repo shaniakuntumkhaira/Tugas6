@@ -65,6 +65,8 @@ public class EsTehAdapter extends RecyclerView.Adapter<EsTehAdapter.ViewHolder> 
 
             namaEsTeh = itemView.findViewById(R.id.tv_esteh);
             gambarEsTeh = itemView.findViewById(R.id.iv_esteh);
+            hargaEsTeh = itemView.findViewById(R.id.tv_esteh2);
+            deskripsiEsTeh = itemView.findViewById(R.id.tv_esteh3);
         }
     }
 }
