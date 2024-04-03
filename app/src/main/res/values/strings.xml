@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EsTeh</string>
+    <!-- String untuk format harga -->
+    <string name="harga_format">Harga: Rp %d</string>
+
+    <!-- String untuk format ukuran -->
+    <string name="size_format">Ukuran: %s</string>
+
+    <!-- String untuk format pesan bagikan -->
+    <string name="share_message_format">Nama: %1$s\nDeskripsi: %2$s\nHarga: Rp %3$d</string>
+
+    <!-- String untuk teks "Bagikan Via" -->
+    <string name="share_via">Bagikan Via</string>
+</resources>
